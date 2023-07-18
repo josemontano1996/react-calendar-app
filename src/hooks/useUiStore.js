@@ -8,18 +8,25 @@ export const useUiStore = () => {
 
   const openDateModal = () => {
     dispatch(onOpenDateModal());
-    };
-    
-    const closeDateModal = () => {
-        dispatch(onCloseDateModal());
-    }
+  };
+
+  const closeDateModal = () => {
+    dispatch(onCloseDateModal());
+  };
+
+  const toggleDateModal = () => {
+    isDateModalOpen
+      ? dispatch(onOpenDateModal())
+      : dispatch(onCloseDateModal());
+  };
 
   return {
     //Properties
     isDateModalOpen,
 
     //Methods
-      openDateModal,
-      closeDateModal,
+    closeDateModal,
+    openDateModal,
+    toggleDateModal,
   };
 };
