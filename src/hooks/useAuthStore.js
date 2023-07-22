@@ -42,7 +42,7 @@ export const useAuthStore = () => {
         }
       }
 
-      dispatch(onLogout(errorArray.toString()));
+      dispatch(onLogout(errorArray));
       setTimeout(() => {
         dispatch(clearErrorMessage());
       }, 10);
