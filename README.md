@@ -34,15 +34,25 @@ The REST API is built using the following technologies:
 
 2. **Calendar Events**
    - `GET /api/events`: Get all events.
-   - `GET /api/events/:id`: Get a specific event by its ID.
    - `POST /api/events/new`: Create a new event.
    - `PUT /api/events/:id`: Update an existing event.
    - `DELETE /api/events/:id`: Delete an event.
-
+   -  To get a specific event and modify it we use Redux states and some logic in order to modify them or delete them from the DB.
 
 ## Input Validation
 
 The API ensures that incoming requests are properly validated to avoid any potential security risks. It rejects requests with invalid data and returns appropriate error responses.
 
 ## CORS Protection
+
 We also implement CORS protection, so only authorized domains can use the API.
+
+## Password Encryption
+
+Passwords are encrypted and safely stored using bycript package.
+
+## Contact
+
+If you would like to contact me you can reach me via [Linkedin](https://www.linkedin.com/in/josemanuelmontanomengual697745171/) or via [email](mailto:josemanuel1996enologia@gmail.com).
+
+Thanks for your attention.
