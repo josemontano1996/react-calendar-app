@@ -21,6 +21,34 @@ export const useAuthStore = () => {
     }
   };
 
+  const startRegister = async ({ name, email, password }) => {
+    dispatch(onChecking());
+    try {
+      const { data } = await calendarApi.post('/auth/new', { name, email, password });
+      localStorage.setItem('token', data.token);
+      localStorage.setItem('token-init-date', new Date().getTime());
+      dispatch(onLogin({ name: data.name, uid: data.uid }));
+    } catch (error) {
+      const errors = error.response.data.msg;
+      let errorArray = [];
+
+      //Logic for handling errors that come as single errors or errors that come in an object.
+      if (typeof errors !== 'object') {
+        errorArray = error.response.data.msg;
+      } else {
+        for (const error in errors) {
+          const value = errors[error].msg;
+          errorArray = [...errorArray, value];
+        }
+      }
+
+      dispatch(onLogout(errorArray.toString()));
+      setTimeout(() => {
+        dispatch(clearErrorMessage());
+      }, 10);
+    }
+  };
+
   return {
     //Properties
     status,
@@ -28,5 +56,6 @@ export const useAuthStore = () => {
     errorMessage,
     //Methods
     startLogin,
+    startRegister,
   };
 };
