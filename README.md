@@ -14,6 +14,15 @@ You can also check our code for our API in the following link:
 
 Note: as the goal from this proyect is to learn how to use React there is no responsive design, so we recommend to visualize the proyect in a regular screen.
 
+## How it works
+
+- Register a new account or log in if you have an already existing one.
+- Click the + button for adding a new event.
+- For updating double click on the event, then the event will be displayed so you can update it.
+- For deleting the event single click on the event you wanna delete and push the delete button.
+- Blue events are the events that you have created and you are the only person authorized to update or delete them.
+- Grey events are events uploaded from other people. You can visualize the information but you can not update or delete them.
+
 ## Main Technologies Used for Client Side
 - React: The main framework used for building the App.
 - React Router: For the routing of our App.
