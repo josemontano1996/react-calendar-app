@@ -1,0 +1,1 @@
+Es un calendario para un equipo. Cambio de color y permisos segun quien haya realizado el evento
