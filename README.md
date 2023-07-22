@@ -5,11 +5,14 @@ We connect to our REST API. With it, we handle authentication and authorization 
 
 Depending on who created the events different permissions for modifying the events are given as well as different physical appearance.
 
+
 You can visit our Client side app in the following links: 
 - [Calendar Web](https://thriving-moonbeam-22f2bd.netlify.app)
 
 You can also check our code for our API in the following link:
 - [Github Calendar API](https://github.com/josemontano1996/backend-calendar)
+
+Note: as the goal from this proyect is to learn how to use React there is no responsive design, so we recommend to visualize the proyect in a regular screen.
 
 ## Main Technologies Used for Client Side
 - React: The main framework used for building the App.
