@@ -22,6 +22,7 @@ Note: as the goal from this proyect is to learn how to use React there is no res
 - For deleting the event single click on the event you wanna delete and push the delete button.
 - Blue events are the events that you have created and you are the only person authorized to update or delete them.
 - Grey events are events uploaded from other people. You can visualize the information but you can not update or delete them.
+- If you open a note and want to exit from it, simply click outside of it, it will close the note without making any changes on it.
 
 ## Main Technologies Used for Client Side
 - React: The main framework used for building the App.
