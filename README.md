@@ -19,6 +19,7 @@ Note: as the goal from this proyect is to learn how to use React there is no res
 ## How it works
 
 - Register a new account or log in with an already existing one, _you can use the test account, which has an email of [josema@josema.com](josema@josema.com) and a password of [123456](123456)_.
+  Note: on the first log in it may take some time, as the request has to wake up the server.
 - Click the + button for adding a new event.
 - For updating double click on the event, then the event will be displayed so you can update it.
 - For deleting the event single click on the event you wanna delete and push the delete button.
